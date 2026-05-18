@@ -120,4 +120,21 @@ Fix namings
 
 `perl -nle 's/>(.*)#(.*)\/(.*)/>$3_$1#$2\/$3/ if /consensus/; s/>(.*)/>$1#LTR\/CRM/ if /CRM/; print $_' history/maizeTE01302020 > maizeTE02052020`
 
+04/09/2026
 
+The following 40 new transposable element (TE) sequences were added and the previous library maizeTE02052020 was moved to history/. Additionally, the TEnaming_guideline.txt file was added to the repository to document TE naming conventions.
+- 28 LTR (Gypsy 14, Copia 9, unknown 5)
+- 10 TIR DNA transposons (DTA 7, DTH 2, DTC 1)
+- 2 LINEs (L1 1, RTE 1)
+
+**Curation Notes:**
+The 40 newly added transposable element (TE) sequences are highly accurate consensus sequences curated and validated through the following pipeline:
+
+* **Consensus Generation:** Initial candidate sequences were identified and their consensus boundaries were curated using **TEtrimmer**.
+* **Structural Validation (LTRs):** The 28 LTR elements underwent rigorous manual validation. Complete and intact structures (including 5' and 3' long terminal repeats) were confirmed using **coverage plots** and **BLAST analysis**.
+* **Boundary & TSD Integrity Verification:** Target Site Duplications (TSDs) for all 40 curated TEs were initially identified using **TSD-searcher** and subsequently **manually inspected** to ensure maximum precision. During this manual curation, sequences were evaluated to:
+  * Examine the sequences to identify any gaps between the designated TE boundaries and the TSDs.
+  * Check for and evaluate any mismatches within the TSD sequences themselves.
+  
+  This rigorous combination of computational searching and manual inspection confirmed the presence and structural integrity of the TSDs across the sequences, ensuring that the consensus boundaries are well-understood.
+* **Novel Lineage Isolation:** The `RIL_YJ_0#LINE/L1` entry is a newly built de novo consensus. Due to its low sequence similarity to existing LINE/L1 elements in `maizeTE02052020`, it has been established as a novel consensus family.
