@@ -141,7 +141,7 @@ The 40 newly added transposable element (TE) sequences are highly accurate conse
 
 06/02/2026
 
-Strand orientation was assigned to all 1,517 consensus sequences and the previous library maizeTE04092026 was moved to history/. Strand calls are encoded as tab-separated metadata in each FASTA header (e.g., `>CRM1_6867nt#LTR/CRM\tstrand=+; evidence=TEsorter`). Of the 1,517 sequences, 762 (50%) received a strand assignment (643 `+`, 119 `-`); 755 remain `strand=?` where evidence was insufficient.
+Strand orientation was assigned to all 1,517 consensus sequences and the previous library maizeTE04092026 was moved to history/. Strand calls are encoded as tab-separated metadata in each FASTA header (e.g., `>CRM1_6867nt#LTR/CRM\tstrand=+; evidence=TEsorter`). Of the 1,517 sequences, 762 (50%) received a strand assignment (643 `+`, 119 `-`); 755 remain `strand=?` where evidence was insufficient. All sequences are reported on the (+) strand: the 119 originally assigned `strand=-` were reverse complemented and their headers updated to `strand=+`.
 
 **Stranding Pipeline:**
 
